@@ -1,8 +1,8 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <Windows.h>
 using namespace std;
 
-const int m = 219;
+
 
 void main() {
 	setlocale(LC_ALL, "Russian");
@@ -28,7 +28,7 @@ void main() {
 
 			for (int l = 0; l < 5; l++)
 			{
-					for (int j = 0; j < v; j++) // êîëè÷åñòâî êâàäðàòîâ
+					for (int j = 0; j < v; j++) // ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð¾Ð²
 				{
 					for (int i = 0; i < 10; i++)
 					{
@@ -50,7 +50,7 @@ void main() {
 			{
 				
 
-				for (int j = 0; j < v; j++) // êîëè÷åñòâî êâàäðàòîâ
+				for (int j = 0; j < v; j++) // ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð¾Ð²
 				{
 					for (int p = 0; p < 10; p++)
 					{
@@ -81,7 +81,7 @@ void main() {
 			{
 				
 
-				for (int j = 0; j < v + 1; j++) // êîëè÷åñòâî êâàäðàòîâ
+				for (int j = 0; j < v + 1; j++) // ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð¾Ð²
 				{
 					for (int i = 0; i < 10; i++)
 					{
@@ -106,7 +106,7 @@ void main() {
 				for (int l = 0; l < 5; l++)
 				{
 					
-					for (int j = 0; j < v; j++) // êîëè÷åñòâî êâàäðàòîâ
+					for (int j = 0; j < v; j++) // ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð¾Ð²
 					{
 						for (int p = 0; p < 10; p++)
 						{
