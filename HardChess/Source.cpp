@@ -2,133 +2,28 @@
 #include <Windows.h>
 using namespace std;
 
-
-
 void main() {
 	setlocale(LC_ALL, "Russian");
-	
-	
-	int n, v, s;
-	v = 0;
-
+	int n;
 	cout << " input line = "; cin >> n;
-
-	
-
-
-
-
-	if (n % 2 == 0)
+	for (int i1 = 0; i1 < n; i1++)
 	{
-		v = n / 2;
-
-
-		for (int q = 0; q < v; q++)
+		for (int i = 0; i < 5; i++) // кубик с размером
 		{
-
-			for (int l = 0; l < 5; l++)
+			for (int j = 0; j < n; j++)
 			{
-					for (int j = 0; j < v; j++) // количество квадратов
-				{
-					for (int i = 0; i < 10; i++)
-					{
-						
-						cout << "*";
-					}
+				if (i % 2 == 0 and j % 2 == 0 and i1 % 2 == 0) for (int z = 0; z < 10; z++) cout << "*";
+				if (i % 2 == 0 and j % 2 != 0 and i1 % 2 == 0) for (int z = 0; z < 10; z++) cout << " ";
+				if (i % 2 != 0 and j % 2 == 0 and i1 % 2 == 0) for (int z = 0; z < 10; z++) cout << "*";
+				if (i % 2 != 0 and j % 2 != 0 and i1 % 2 == 0) for (int z = 0; z < 10; z++) cout << " ";
 
-					for (int p = 0; p < 10; p++)
-					{
-						cout << " ";
-					}
-
-				}
-				
-				cout << "\n";
+				if (i % 2 == 0 and j % 2 == 0 and i1 % 2 != 0) for (int z = 0; z < 10; z++) cout << " ";
+				if (i % 2 == 0 and j % 2 != 0 and i1 % 2 != 0) for (int z = 0; z < 10; z++) cout << "*";
+				if (i % 2 != 0 and j % 2 == 0 and i1 % 2 != 0) for (int z = 0; z < 10; z++) cout << " ";
+				if (i % 2 != 0 and j % 2 != 0 and i1 % 2 != 0) for (int z = 0; z < 10; z++) cout << "*";
 			}
-
-			for (int l = 0; l < 5; l++)
-			{
-				
-
-				for (int j = 0; j < v; j++) // количество квадратов
-				{
-					for (int p = 0; p < 10; p++)
-					{
-						cout << " ";
-					}
-
-					for (int i = 0; i < 10; i++)
-					{
-						
-						cout << "*";
-					}
-
-				}
-				
-				cout << "\n";
-			}
-
-		}
-
-	}
-	else
-	{
-		v = n / 2;
-		for (int q = 0; q < v + 1; q++)
-		{
-
-			for (int l = 0; l < 5; l++)
-			{
-				
-
-				for (int j = 0; j < v + 1; j++) // количество квадратов
-				{
-					for (int i = 0; i < 10; i++)
-					{
-						
-						cout << "*";
-					}
-					if (j != v)
-					{
-						for (int p = 0; p < 10; p++)
-						{
-							cout << " ";
-						}
-
-					}
-
-				}
-				
-				cout << "\n";
-			}
-			if (q != v)
-			{
-				for (int l = 0; l < 5; l++)
-				{
-					
-					for (int j = 0; j < v; j++) // количество квадратов
-					{
-						for (int p = 0; p < 10; p++)
-						{
-							cout << " ";
-						}
-
-						for (int i = 0; i < 10; i++)
-						{
-							
-							cout << "*";
-						}
-
-					}
-					for (int p = 0; p < 10; p++)
-					{
-						cout << " ";
-					}
-					
-					cout << "\n";
-				}
-			}
+			cout << "\n";
 		}
 	}
 
-	}
+}
